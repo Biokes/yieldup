@@ -11,11 +11,10 @@
 YIELDFI is a decentralized yield platform that converts idle assets into productive capital for underbanked populations across Africa and emerging markets. Users stake digital assets (USDC, ETH, DAI) through any interface—including USSD code on basic mobile phones—and receive yield-bearing NFTs that appreciate over time as their assets generate income.
 
 ### Core Promise
-
 - **For the Unbanked:** Access to 15–20% annual yield with zero bank account required
 - **For Investors:** Token appreciation and governance participation
 - **For Protocols:** Sustainable revenue model with zero operational overhead
-- **For Hedera:** Network adoption and transaction volume
+- **For Blockchains:** Network adoption and transaction volume
 
 ### Key Differentiators
 
@@ -74,9 +73,9 @@ Response: "Verify pin: ****"
 Step 3: User enters PIN
 Response: "Staking 5000 KES... Processing"
 
-Step 4: Transaction on Hedera blockchain (invisible to user)
+Step 4: Transaction on  blockchain (invisible to user)
 - KES converted to USDC via stablecoin bridge
-- USDC deposited into Hedera staking contract
+- USDC deposited into  staking contract
 - NFT minted and linked to user's phone number
 - Yield accumulation begins
 
@@ -88,14 +87,14 @@ Step 5 (After 30 days): User dials *123*YIELDFI*REWARDS*1234#
 Response: "Accumulated yield: 75 KES (~$0.60)
 Claim rewards? Y(1) N(0)"
 ```
-
+1
 #### Scenario 2: Crypto-Savvy User (Via Web App)
 
 ```
 1. Connect wallet (MetaMask, RainbowKit, etc.)
 2. Choose asset: USDC, ETH, or SUI
 3. Enter amount to stake
-4. Approve transaction (pay network fee ~$0.0001 on Hedera)
+4. Approve transaction (pay network fee ~$0.0001 on )
 5. NFT minted instantly (shows yield accrual in real-time)
 6. Hold NFT or list on marketplace to sell to other users
 7. Yield accumulates and can be claimed anytime
@@ -109,24 +108,24 @@ Claim rewards? Y(1) N(0)"
 
 **User's Perception:**
 - "I can stake ETH, USDC, or SUI from any chain"
-- Assets are secured and converted to Hedera-native stablecoins
+- Assets are secured and converted to blockchain-native stablecoins
 - No confusion about where assets actually are
 
 **Behind the Scenes:**
 - Cross-chain bridge (Stargate, Axelar, or custom) converts:
-  - ETH on Ethereum → USDC on Hedera
-  - USDC on Polygon → USDC on Hedera
-  - SUI on Sui Network → USDC on Hedera
-- Single liquidity pool on Hedera (all assets consolidated)
+  - ETH on Ethereum → USDC on BASE
+  - USDC on Polygon → USDC on BASE
+  - SUI on Sui Network → USDC on BASE
+- Single liquidity pool on BASE (all assets consolidated)
 - Users unaware of bridge; they just see "stake and earn"
 
 **Technical Implementation:**
 ```
 User Input: Stake 1 ETH (Ethereum mainnet)
 ↓
-Bridge Contract: Lock ETH on Ethereum, mint USDC on Hedera
+Bridge Contract: Lock ETH on Ethereum, mint USDC on BASE
 ↓
-Hedera Staking Contract: Receive USDC, begin yield accumulation
+BASE Staking Contract: Receive USDC, begin yield accumulation
 ↓
 NFT Minting: Create yield-bearing NFT linked to user
 ↓
@@ -217,7 +216,7 @@ Telecom USSD Gateway (Orange, Vodafone, MTN, Safaricom)
     ↓ (Routes to YIELDFI backend)
 YIELDFI Backend Server (Amazon/Heroku)
     ↓ (Validates user, processes transaction)
-Hedera Blockchain
+BASE Blockchain
     ↓ (Executes smart contract, mints NFT, begins yield)
 Response sent back → User phone (3 seconds)
 ```
@@ -240,7 +239,7 @@ Response sent back → User phone (3 seconds)
 1. User approves staking contract to transfer assets
    (Security: User explicitly authorizes this)
 
-2. Assets locked in Hedera staking contract
+2. Assets locked in BASE staking contract
    (Security: Smart contract holds assets, not centralized wallet)
 
 3. Assets forwarded to lending protocol (Hashstack, SaucerSwap, or custom)
@@ -292,7 +291,7 @@ Yearly claim: $18
 
 2. **Buy NFT:**
    - See accrued yield and future yield potential
-   - Instant settlement on Hedera (<3 seconds)
+   - Instant settlement on BASE (<3 seconds)
    - Buyer now owns NFT and all future yields
 
 3. **Auction or make offers:**
@@ -321,7 +320,7 @@ Marketplace fee: 2% of $106 = $2.12 (in YIELDFI tokens)
 
 - NFTs can be bridged to Ethereum, Polygon, Base
 - Trade on OpenSea, Blur, or other marketplaces
-- Yield still accrues on Hedera (transparent bridge)
+- Yield still accrues on BASE (transparent bridge)
 
 ---
 
@@ -345,7 +344,7 @@ Monthly revenue: $23,750
 
 Development & Operations (40%):        $9,500
 → Software engineers (x2 at $4K each)
-→ Infrastructure (AWS, Hedera RPC nodes)
+→ Infrastructure (AWS, BASE RPC nodes)
 → Third-party APIs (Chainlink, telcos)
 
 Community & Growth (30%):              $7,125
@@ -410,7 +409,7 @@ Reserve Fund (10%):                    $2,375
 - Wants exposure to emerging markets
 
 **With YIELDFI:**
-- Converts assets (any chain) and stakes on Hedera
+- Converts assets (any chain) and stakes on BASE
 - Earns 15–20% APY + YIELDFI token upside
 - Can trade NFTs for yield arbitrage
 - Owns both principal + appreciation
@@ -454,18 +453,18 @@ Reserve Fund (10%):                    $2,375
 ✅ **Capital:** Billions of dollars in new deposits flowing in from Africa  
 ✅ **Volume:** Network effects = more lending = more spreads  
 ✅ **Partnerships:** Revenue share model (we succeed together)  
-✅ **Liquidity:** Instant redemption via Hedera's fast finality  
+✅ **Liquidity:** Instant redemption via BASE's fast finality  
 ✅ **Market expansion:** YIELDFI brings underbanked to their platform  
 
 ---
 
-### For Hedera Network
+### For BASE Network
 
 ✅ **Adoption:** Millions of daily transactions (staking, claiming, NFT mints, trades)  
 ✅ **Volume:** Each transaction = HBAR burned = HBAR scarcity = HBAR price up  
 ✅ **Enterprise case:** Real use case in financial inclusion (not speculative)  
 ✅ **Ecosystem:** Attracts other DeFi protocols, multiplying network effect  
-✅ **Narrative:** "Hedera powers financial inclusion in Africa"  
+✅ **Narrative:** "BASE powers financial inclusion in Africa"  
 
 ---
 
@@ -491,10 +490,10 @@ Reserve Fund (10%):                    $2,375
 
 ### 7.1 Smart Contracts
 
-**Core Contracts on Hedera:**
+**Core Contracts on BASE:**
 
 1. **YIELDFIToken.sol**
-   - ERC20-compliant (HTS on Hedera)
+   - ERC20-compliant (HTS on BASE)
    - Total supply: 100M tokens
    - Emission schedule (3–5% of TVL staked per year)
    - Burn mechanism (treasury buys back)
@@ -507,7 +506,7 @@ Reserve Fund (10%):                    $2,375
    - Allows claiming/unstaking anytime
 
 3. **YieldNFT.sol**
-   - ERC721-compliant (HTS on Hedera)
+   - ERC721-compliant (HTS on BASE)
    - Stores: principal, accrued yield, metadata
    - Supports bridging to other chains
    - Immutable ownership history (for transparency)
@@ -520,8 +519,8 @@ Reserve Fund (10%):                    $2,375
 
 5. **BridgeAdapter.sol** (optional, if custom bridge needed)
    - Lock assets on source chain (Ethereum, Polygon, Sui)
-   - Mint USDC on Hedera
-   - Burn USDC on Hedera, unlock on source chain
+   - Mint USDC on BASE
+   - Burn USDC on BASE, unlock on source chain
 
 ---
 
@@ -558,14 +557,14 @@ Reserve Fund (10%):                    $2,375
 - **API Layer:** Node.js + Express (handles USSD, API requests)
 - **Database:** PostgreSQL (user accounts, transaction history)
 - **Message Queue:** Redis (async processing of on-chain events)
-- **Blockchain Node:** Hedera Mirror Node + custom RPC
+- **Blockchain Node:** BASE Mirror Node + custom RPC
 - **Authentication:** OAuth2 + PIN-based (for USSD users)
 - **Currency conversion:** Chainlink price feeds
 
 **Infrastructure:**
 
 - AWS (EC2, RDS, Lambda, SNS)
-- Hedera public network (testnet initially, mainnet later)
+- BASE public network (testnet initially, mainnet later)
 - Chainlink VRF (randomness for NFT traits, if gamified)
 - Telecom USSD gateway API (Orange, Vodafone, etc.)
 
@@ -592,16 +591,16 @@ Step 3: User enters staking details
 
 Step 4: Approval transaction (if first time staking USDC)
   → User signs approval in wallet
-  → Cost: $0.0001 on Hedera (negligible)
+  → Cost: $0.0001 on BASE (negligible)
   → Approval allows contract to spend USDC
 
-Step 5: Bridge transaction (ETH → Hedera)
+Step 5: Bridge transaction (ETH → BASE)
   → User signs bridge transaction
   → $100 USDC locked on Ethereum
-  → $100 USDC minted on Hedera
+  → $100 USDC minted on BASE
   → Time: <10 seconds
 
-Step 6: Staking transaction (on Hedera)
+Step 6: Staking transaction (on BASE)
   → User signs staking transaction
   → $100 USDC deposited to lending protocol
   → NFT minted
@@ -623,7 +622,7 @@ Step 9: User can claim rewards anytime
   → Button: "Claim Yield"
   → Calculates: Accrued yield since last claim
   → User receives: Yield in USDC + YIELDFI token
-  → Cost: $0.0001 on Hedera
+  → Cost: $0.0001 on BASE
   → Time: <3 seconds
 
 Step 10: Or user can sell NFT
@@ -749,7 +748,7 @@ After transaction:
 **Alice can sell her NFT on OpenSea (Ethereum) instead of YIELDFI marketplace:**
 
 ```
-Alice's NFT (originally on Hedera):
+Alice's NFT (originally on BASE):
 - Can be bridged to Ethereum
 - Listed on OpenSea
 - More liquidity, potentially higher price
@@ -757,13 +756,13 @@ Alice's NFT (originally on Hedera):
 Buyers on OpenSea:
 - Purchase Alice's NFT for $110 (better price than YIELDFI marketplace)
 - NFT transferred to buyer's Ethereum wallet
-- Yield still accrues on Hedera (via bridge)
+- Yield still accrues on BASE (via bridge)
 
 Bridge mechanism:
-- Smart contract locks NFT on Hedera
+- Smart contract locks NFT on BASE
 - Mints NFT wrapper on Ethereum
 - Buyer can trade on OpenSea
-- When buyer bridges back to Hedera, NFT unlocked
+- When buyer bridges back to BASE, NFT unlocked
 - Yield continues accruing to current owner
 ```
 
@@ -779,7 +778,7 @@ User sees three options:
 2. Stake ETH from Ethereum
 3. Stake USDC from Polygon
 4. Stake SUI from Sui Network
-(All paths lead to single Hedera pool)
+(All paths lead to single BASE pool)
 ```
 
 ### The Technical Reality
@@ -793,16 +792,16 @@ Smart contract on Ethereum locks 1 ETH
 ↓
 Chainlink oracle: ETH price = $2,500
 ↓
-Bridge mints $2,500 USDC on Hedera
+Bridge mints $2,500 USDC on BASE
 ↓
-User receives: 1 NFT on Hedera worth $2,500 USDC
+User receives: 1 NFT on BASE worth $2,500 USDC
 ↓
-Yield accrues on Hedera ($2,500 × 18% APY)
+Yield accrues on BASE ($2,500 × 18% APY)
 ↓
 User can:
-a) Hold and claim yield on Hedera
+a) Hold and claim yield on BASE
 b) Bridge NFT to Ethereum and sell on OpenSea
-c) Unstake (bridge burns USDC on Hedera, unlocks ETH on Ethereum)
+c) Unstake (bridge burns USDC on BASE, unlocks ETH on Ethereum)
 ```
 
 ### Supported Chains & Assets
@@ -823,10 +822,10 @@ c) Unstake (bridge burns USDC on Hedera, unlocks ETH on Ethereum)
 
 **For YIELDFI:**
 - Larger potential user base (reaches Ethereum, Polygon, Sui communities separately)
-- Liquidity concentration on Hedera (all chains' assets pool together = deeper liquidity)
+- Liquidity concentration on BASE (all chains' assets pool together = deeper liquidity)
 - Network effects (Sui users + Ethereum users + Polygon users = larger ecosystem)
 
-**For Hedera:**
+**For BASE:**
 - Bridge traffic = transactions = HBAR burned
 - Positioning as "yield hub" for multi-chain DeFi
 
@@ -916,7 +915,7 @@ Token price up → More investor interest → More capital
 
 **Platform Health:**
 - Smart contract transaction success rate (target: 99.9%)
-- Average transaction time (target: <3 seconds on Hedera)
+- Average transaction time (target: <3 seconds on BASE)
 - Network uptime (target: 99.95%)
 - USSD session success rate (target: 98%+)
 
@@ -1046,7 +1045,7 @@ Token price up → More investor interest → More capital
 ### Channel 3: Earned Media
 
 - Press releases (major milestones: 1M users, $100M TVL)
-- Hackathon wins (Hedera hackathon is starting point)
+- Hackathon wins (BASE hackathon is starting point)
 - Research/thought leadership (research on African yield markets)
 - Regulatory approvals (first decentralized platform approved in X country)
 
@@ -1151,8 +1150,8 @@ Token price up → More investor interest → More capital
 
 ### For Ecosystem
 
-✅ 1M+ daily transactions on Hedera (ranking among top networks)  
-✅ $500M+ TVL (top 10 Hedera DeFi protocol)  
+✅ 1M+ daily transactions on BASE (ranking among top networks)  
+✅ $500M+ TVL (top 10 BASE DeFi protocol)  
 ✅ Partnerships with 10+ lending protocols  
 ✅ YIELDFI token organic price appreciation (not pump & dump)  
 
@@ -1167,7 +1166,7 @@ Token price up → More investor interest → More capital
 - [ ] YieldNFT.sol (minting, metadata, ownership tracking)
 - [ ] YIELDFIToken.sol (governance, emissions schedule)
 - [ ] Marketplace.sol (list, buy, sell NFTs)
-- [ ] Basic bridge adapter (Ethereum ↔ Hedera only)
+- [ ] Basic bridge adapter (Ethereum ↔ BASE only)
 
 **Frontend:**
 - [ ] Web app (React, wallet connection, staking UI)
@@ -1223,7 +1222,7 @@ YIELDFI is a decentralized yield platform that lets anyone—regardless of phone
 
 ### Why Now
 
-- Hedera's infrastructure is ready (fast, cheap, efficient)
+- BASE's infrastructure is ready (fast, cheap, efficient)
 - Telecom adoption in Africa makes USSD feasible
 - DeFi protocols (lending, trading) have matured
 - Financial inclusion is a top ESG priority for institutions
@@ -1242,7 +1241,7 @@ YIELDFI is a decentralized yield platform that lets anyone—regardless of phone
 - Early mover in African DeFi
 - Sustainable revenue model (1–2% fees on $500M+ TVL = $5M–$10M annual revenue)
 - Token upside (YIELDFI price: $0.01 → $0.10–$1.00 potential)
-- Acquisition targets (Hedera, Chainlink, established DeFi protocols interested in emerging markets)
+- Acquisition targets (BASE, Chainlink, established DeFi protocols interested in emerging markets)
 
 ---
 
@@ -1255,7 +1254,7 @@ YIELDFI is a decentralized yield platform that lets anyone—regardless of phone
 ```
 stake(address token, uint256 amount, string originChain)
   → Accepts tokens from any chain
-  → Bridges to Hedera if needed
+  → Bridges to BASE if needed
   → Mints NFT
   → Returns NFT token ID
 
