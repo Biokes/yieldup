@@ -5,5 +5,5 @@ export class WalletService {
     async requestToken(): Promise<void> { }
     async stake(): Promise<void>  { }
     async claimInvestmentReturn(): Promise<void>  { }
-    async checHistory() { }
+    async checkHistory(): Promise<void> { }
 }
